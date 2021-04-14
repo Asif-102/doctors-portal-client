@@ -23,7 +23,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
         
-        fetch('https://salty-plateau-71286.herokuapp.com/addAppointment', {
+        fetch('http://localhost:5000/addAppointment', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
